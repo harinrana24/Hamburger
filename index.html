@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customizable Hamburger</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Customize Your Hamburger</h1>
+
+    <div class="main bun">
+        <label id="main-lab" for="bun">Bun:</label>
+        <select id="bun">
+          <option value="sesame">Sesame</option>
+          <option value="whole-wheat">Whole Wheat</option>
+        </select>
+      </div>
+
+      <div class="main garnish">
+        <label id="main-lab" for="garnish">Garnish:</label>
+    
+        <input type="checkbox" id="chiles" name="garnish" value="chiles">
+        <label for="chiles">Chiles</label>
+        <input type="checkbox" id="bacon" name="garnish" value="bacon">
+        <label for="bacon">Bacon</label>
+        <input type="checkbox" id="pickles" name="garnish" value="pickles">
+       
+        <label for="pickles">Pickles</label>
+        <input type="checkbox" id="lettuce" name="garnish" value="lettuce">
+        <label for="lettuce">Lettuce</label>
+        <input type="checkbox" id="onions" name="garnish" value="onions">
+        <label for="onions">Onions</label>
+        <input type="checkbox" id="fried-egg" name="garnish" value="fried-egg">
+
+        <label for="fried-egg">Fried Egg</label>
+      </div>
+
+      <div class="main cheese">
+        <label id="main-lab" for="cheese">Cheese:</label>
+        <select id="cheese">
+          <option value="cheddar">Cheddar</option>
+          <option value="swiss">Swiss</option>
+          <option value="mozzerella">Mozzerella</option>
+          <option value="Blue Chesse">Blue Chesse</option>
+        </select>
+      </div>
+
+      <div class="main sauce">
+        <label id="main-lab" for="sauce">Sauce:</label>
+        <input type="checkbox" id="ketchup" name="sauce" value="ketchup">
+        <label for="ketchup">Ketchup</label>
+        <input type="checkbox" id="mayo" name="sauce" value="mayo">
+        <label for="mayo">Mayonnaise</label>
+        <input type="checkbox" id="mustard" name="sauce" value="mustard">
+        <label for="mustard">Mustard</label>
+       
+      </div>
+
+      <div class="main pattytype">
+        <label id="main-lab" for="pattyType">Patty Type:</label>
+        <select id="pattyType">
+          <option value="beef">Beef</option>
+          <option value="chicken">Chicken</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="impossible">Impossible</option>
+        </select>
+      </div>
+
+      <div class="main pattycount">
+        <label id="main-lab" for="pattyCount">Patty Count:</label>
+        <input type="number" id="pattyCount" value="1">
+      </div>
+
+    <button onclick="createHamburger()">Create Hamburger</button>
+
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="ham.js"></script>
+</body>
+</html>
